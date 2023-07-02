@@ -1,2 +1,2 @@
 # python-NTP
-请求NTP服务器获取时间
+使用python请求NTP服务器获取时间
