@@ -2,7 +2,7 @@ import random
 import ntplib  #导入用于与NTP服务器进行通信的库
 from datetime import datetime,timezone,timedelta  #导入用于处理日期和时间的库和用于处理时间间隔的库
 def get_ntp_time_china():  #定义一个函数来获取NTP时间，并将其转换为东八区时间
-    ntp_servers = ['time1.cloud.tencent.com', 'ntp.aliyun.com', 'time.windows.com']  #NTP服务器列表
+    ntp_servers = ['ntp.aliyun.com','time.cloud.tencent.com','cn.ntp.org.cn','ntp.ntsc.ac.cn']  #NTP服务器列表
     selecte_server = random.choice(ntp_servers)  #随机选择一个NTP服务器
     c = ntplib.NTPClient()  #创建一个NTPClient对象，用于与NTP服务器建立连接
     response = c.request(selecte_server)  #使用随机选择的服务器进行请求
