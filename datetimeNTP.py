@@ -1,4 +1,4 @@
-import random
+import random  #导入随机选择的库
 import ntplib  #导入用于与NTP服务器进行通信的库
 from datetime import datetime,timezone,timedelta  #导入用于处理日期和时间的库和用于处理时间间隔的库
 def get_ntp_time_china():  #定义一个函数来获取NTP时间，并将其转换为东八区时间
